@@ -1,0 +1,28 @@
+header {
+  height: 6rem;
+  background-color: #212121;
+  color: #FFFFFF;
+}
+header .container {
+  height: 100%;
+}
+header nav {
+  height: 100%;
+}
+header nav img {
+  width: 5rem;
+}
+header nav a {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-right: 3em;
+}
+header nav img {
+  margin-right: 3em;
+}
+header h3 {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=header.css.map */
