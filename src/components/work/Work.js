@@ -1,26 +1,22 @@
 import React from 'react';
 import './work.css'
 import SectionBtn from "../section_buttons/SectionBtn";
+import WorkInfo from "../work_info/WorkInfo";
 
 const Work = () => {
     return (
         <section className='work flex-center'>
-            <div className="container flex-space-btw">
                 <SectionBtn
+                    type='bxs'
                     icon='briefcase'
                     text='Work experience'
+                    bgColor='black'
+                    textColor='white'
                 />
-                <div className="work-info">
-                    <h2></h2>
-                    <p></p>
-
-                    <h3></h3>
-                    <div className="work-desc">
-                        <box-icon name='check-circle' type='solid' ></box-icon>
-
-                    </div>
+                <div className="container flex-space-btw">
+                    <WorkInfo/>
+                    <WorkInfo/>
                 </div>
-            </div>
         </section>
     );
 };

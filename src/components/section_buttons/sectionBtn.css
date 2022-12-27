@@ -1,7 +1,9 @@
 .gradIcon {
   background-color: #050505;
   border-radius: 50%;
-  padding: 1em 1em;
+  padding: 1rem 1rem;
+  color: white;
+  font-size: 3rem;
 }
 .education-icons {
   margin-bottom: 2rem;

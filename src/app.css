@@ -54,6 +54,10 @@ button {
   align-items: center;
   justify-content: center;
 }
+.flex{
+  display: flex;
+  align-items: center;
+}
 
 .flex-space-btw {
   display: flex;

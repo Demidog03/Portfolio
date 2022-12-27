@@ -1,3 +1,10 @@
-
+.work {
+  flex-direction: column;
+  padding: 6rem 0;
+  background-color: #E5E5E5;
+}
+.work .container {
+  flex-wrap: wrap;
+}
 
 /*# sourceMappingURL=work.css.map */

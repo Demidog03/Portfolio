@@ -13,8 +13,11 @@ const About = () => {
         <section className={'about flex-center'}>
             <h2>About Me</h2>
             <SectionBtn
+                type='bxs'
                 icon='graduation'
                 text='Education'
+                bgColor='black'
+                textColor='white'
             />
             <button className='education-text'>
                 <h4>{educationData.major} Major</h4>
