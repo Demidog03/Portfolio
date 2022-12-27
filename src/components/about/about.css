@@ -1,0 +1,24 @@
+.about {
+  flex-direction: column;
+  padding: 3rem 0;
+  background-color: #FFFFFF;
+}
+.about h2 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  font-weight: 600;
+}
+.about .education-text {
+  max-width: 1260px;
+  width: 70%;
+  background-color: #474747;
+  color: #FFFFFF;
+}
+.about .education-text p {
+  font-weight: 400;
+}
+.about .education-text * {
+  margin: 1.5rem 0;
+}
+
+/*# sourceMappingURL=about.css.map */

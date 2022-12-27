@@ -21,7 +21,7 @@
   top: 50%;
   transform: translateY(-50%);
   left: 4.3rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-align: center;
   width: 80%;
 }
@@ -37,23 +37,23 @@
   justify-content: space-between;
 }
 .welcome .welcome-text .welcome-text-wrapper h1 {
-  font-size: 4.3rem;
+  font-size: 4rem;
   font-weight: 500;
   margin-right: 0.3em;
 }
 .welcome .welcome-text .welcome-text-wrapper button {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 400;
   background-color: #474747;
   color: #FFFFFF;
 }
 .welcome .welcome-text .welcome-text-wrapper h2 {
-  font-size: 3.7rem;
+  font-size: 3rem;
   font-weight: 500;
 }
 .welcome .welcome-text .welcome-text-wrapper p {
   margin-top: 0.5em;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   font-weight: 400;
 }
 

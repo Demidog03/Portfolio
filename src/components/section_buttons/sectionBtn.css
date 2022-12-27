@@ -1,0 +1,18 @@
+.gradIcon {
+  background-color: #050505;
+  border-radius: 50%;
+  padding: 1em 1em;
+}
+.education-icons {
+  margin-bottom: 2rem;
+}
+.education-icons button {
+  margin: 0 0.2rem;
+}
+.education-icons .education-icon {
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 1.2rem 1.7rem;
+}
+
+/*# sourceMappingURL=sectionBtn.css.map */
