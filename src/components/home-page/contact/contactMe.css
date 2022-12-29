@@ -1,0 +1,56 @@
+.contactMe {
+  flex-direction: column;
+  padding: 6rem 0;
+  background-color: #1C1C1C;
+}
+.contactMe h2 {
+  color: #FFFFFF;
+}
+.contactMe button {
+  background-color: #FFFFFF;
+  margin: 3rem 0;
+  width: 35%;
+  padding: 1rem 1rem;
+  position: relative;
+  z-index: 1;
+}
+.contactMe button .vector {
+  position: absolute;
+  top: 6rem;
+  right: 6rem;
+}
+.contactMe .contact-form {
+  color: #FFFFFF;
+  width: 90%;
+}
+.contactMe .contact-form h4 {
+  margin-left: 3rem;
+  margin-bottom: 0.7rem;
+}
+.contactMe .contact-form .email {
+  padding: 1.2rem 3rem;
+  border-radius: 6.25rem;
+  width: 45%;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+.contactMe .contact-form textarea {
+  border-radius: 6.25rem;
+  width: 70%;
+  height: 19rem;
+  resize: none;
+  padding: 2rem 4rem;
+  font-size: 1.2rem;
+}
+.contactMe .contact-form .submit {
+  border-radius: 6.25rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: block;
+  margin-left: 3rem;
+  margin-top: 0.3rem;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=contactMe.css.map */

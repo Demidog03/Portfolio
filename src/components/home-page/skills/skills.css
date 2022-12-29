@@ -1,0 +1,31 @@
+.skills {
+  flex-direction: column;
+  padding: 4rem 0;
+  background-color: #1C1C1C;
+}
+.skills .container {
+  margin: 1rem 0;
+}
+.skills .skills-row {
+  margin: 0.5rem 0;
+}
+.skills .projects {
+  margin: 8rem 0 0;
+}
+.skills .projects h3 {
+  color: #FFFFFF;
+  font-weight: 400;
+}
+.skills .projects button h3 {
+  color: #000000;
+  font-weight: 700;
+}
+.skills .projects button i {
+  font-size: 4rem;
+}
+
+.andMoreBtn {
+  padding: 2rem 3.2rem;
+}
+
+/*# sourceMappingURL=skills.css.map */

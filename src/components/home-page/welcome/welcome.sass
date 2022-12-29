@@ -1,0 +1,50 @@
+@import '../../../variables/variables'
+
+.welcome
+  height: calc(100vh - #{$header-height})
+  background-color: $welcome-color
+  align-items: center
+  position: relative
+  .welcome-img
+    height: 100%
+    width: 35%
+    transform: translateX(-1.9rem)
+    object-fit: cover
+  .welcome-bubble
+    position: absolute
+    left: 40%
+    top: 50%
+    height: 15vh
+    h3
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      left: 4.3rem
+      font-size: $text-medium
+      text-align: center
+      width: 80%
+    img
+      height: 15vh
+  .welcome-text
+    margin-right: 15%
+    color: $text-light
+    height: 60%
+    .welcome-text-wrapper
+      justify-content: space-between
+      h1
+        font-size: $text-extraBig
+        font-weight: $weight-medium
+        margin-right: 0.3em
+      button
+        font-size: $text-medium
+        font-weight: $weight-regular
+        background-color: $welcome-btn-color
+        color: $text-light
+      h2
+        font-size: $text-big
+        font-weight: $weight-medium
+      p
+        margin-top: 0.5em
+        font-size: $text-medium
+        font-weight: $weight-regular
+        

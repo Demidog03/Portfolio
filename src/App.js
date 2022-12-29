@@ -1,14 +1,16 @@
 import './app.css';
-import './components/header/header.css'
+import './components/home-page/header/header.css'
 import 'boxicons'
-import Header from "./components/header/Header";
-import Welcome from "./components/welcome/Welcome";
-import About from "./components/about/About";
-import University from "./components/university/University";
-import Work from "./components/work/Work";
-import Skills from "./components/skills/Skills";
-import MyArt from "./components/art/MyArt";
-import ContactMe from "./components/contact/ContactMe";
+import Header from "./components/home-page/header/Header";
+import Welcome from "./components/home-page/welcome/Welcome";
+import About from "./components/home-page/about/About";
+import University from "./components/home-page/university/University";
+import Work from "./components/home-page/work/Work";
+import Skills from "./components/home-page/skills/Skills";
+import MyArt from "./components/home-page/art/MyArt";
+import ContactMe from "./components/home-page/contact/ContactMe";
+import Footer from "./components/home-page/footer/Footer";
+
 
 function App() {
   return (
@@ -21,6 +23,7 @@ function App() {
         <Skills/>
         <MyArt/>
         <ContactMe/>
+        <Footer/>
     </div>
   );
 }

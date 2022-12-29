@@ -1,0 +1,48 @@
+@import '../../../variables/variables'
+
+
+.contactMe
+  flex-direction: column
+  padding: 6rem 0
+  background-color: $contactMe-bg-color
+  h2
+    color: $text-light
+  button
+    background-color: $contactMe-bubble-color
+    margin: 3rem 0
+    width: 35%
+    padding: 1rem 1rem
+    position: relative
+    z-index: 1
+    .vector
+      position: absolute
+      top: 6rem
+      right: 6rem
+  .contact-form
+      color: $text-light
+      width: 90%
+      h4
+        margin-left: 3rem
+        margin-bottom: .7rem
+      .email
+          padding: 1.2rem 3rem
+          border-radius: 6.25rem
+          width: 45%
+          margin-bottom: 2rem
+          font-size: $text-regular
+      textarea
+          border-radius: 6.25rem
+          width: 70%
+          height: 19rem
+          resize: none
+          padding: 2rem 4rem
+          font-size: $text-small
+      .submit
+        border-radius: 6.25rem
+        padding: 1rem 2rem
+        font-size: $text-small
+        font-weight: $weight-semiBold
+        display: block
+        margin-left: 3rem
+        margin-top: .3rem
+        cursor: pointer
