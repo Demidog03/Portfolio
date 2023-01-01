@@ -13,8 +13,11 @@
   margin: 8rem 0 0;
 }
 .skills .projects h3 {
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 400;
+}
+.skills .projects button {
+  cursor: pointer;
 }
 .skills .projects button h3 {
   color: #000000;

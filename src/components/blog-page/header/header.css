@@ -1,6 +1,27 @@
-header {
+.blog-header {
   height: 6rem;
   background-color: #212121;
+  color: #bbbbbb;
+}
+.blog-header h3 {
+  font-size: 2.2rem;
+}
+.blog-header button {
+  border-radius: 0.7rem;
+  cursor: pointer;
+}
+.blog-header button:hover {
+  background-color: grey;
+  color: white;
+}
+.blog-header button:hover p {
+  font-weight: 600;
+}
+.blog-header .logo {
+  color: white;
+}
+.blog-header p:hover {
+  color: white;
 }
 
 /*# sourceMappingURL=header.css.map */

@@ -4,7 +4,7 @@
   background-color: #1C1C1C;
 }
 .contactMe h2 {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .contactMe button {
   background-color: #FFFFFF;
@@ -16,11 +16,10 @@
 }
 .contactMe button .vector {
   position: absolute;
-  top: 6rem;
   right: 6rem;
 }
 .contactMe .contact-form {
-  color: #FFFFFF;
+  color: #ffffff;
   width: 90%;
 }
 .contactMe .contact-form h4 {
@@ -42,15 +41,21 @@
   padding: 2rem 4rem;
   font-size: 1.2rem;
 }
-.contactMe .contact-form .submit {
+.contactMe .contact-form .submit-contact {
   border-radius: 6.25rem;
   padding: 1rem 2rem;
   font-size: 1.2rem;
   font-weight: 600;
   display: block;
-  margin-left: 3rem;
-  margin-top: 0.3rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
   cursor: pointer;
+  background-color: darkgrey;
+  border: none;
+  outline: none;
+}
+.contactMe .contact-form .submit-contact:hover {
+  background-color: white;
 }
 
 /*# sourceMappingURL=contactMe.css.map */

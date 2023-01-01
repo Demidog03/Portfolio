@@ -1,25 +1,26 @@
 import React from 'react';
 import './workInfo.css'
 
-const WorkInfo = () => {
+const WorkInfo = (props) => {
+    const tasks = props.work.tasks.map(task => {
+        return (
+            <div className="task flex">
+                <i className='bx bxs-check-circle'></i>
+                <p>{task}</p>
+            </div>
+        )
+    })
     return (
         <div className="work-info">
-            <h3>Web Programming Mentor</h3>
-            <p className='date'>(2021-06 – 2022-05)</p>
+            <h3>{props.work.position}</h3>
+            <p className='date'>({props.work.time})</p>
 
             <div className="work-company flex">
-                <h3>Morrison Academy</h3>
+                <h3>{props.work.company}</h3>
                 <i className='bx bx-right-arrow-circle'></i>
             </div>
             <div className="work-desc">
-                <div className="task flex">
-                    <i className='bx bxs-check-circle'></i>
-                    <p>I supported and helped students in learning front-end programming.</p>
-                </div>
-                <div className="task flex">
-                    <i className='bx bxs-check-circle'></i>
-                    <p>Additionally, I gave lectures.</p>
-                </div>
+                {tasks}
             </div>
         </div>
     );

@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["university.sass","../../../variables/variables.sass"],"names":[],"mappings":"AAEA;EACE;EACA;;;AAEF;EACE;EACA,kBCSyB;EDRzB,OCLW;;ADMX;EACE;EACA;;AACF;EACE;;AACA;EACE,aCiCW;;ADhCb;EACE;EACA;;AACF;EACE","file":"university.css"}
+{"version":3,"sourceRoot":"","sources":["university.sass","../../../variables/variables.sass"],"names":[],"mappings":"AAEA;EACE;EACA;;;AAEF;EACE;EACA,kBCSyB;EDRzB,OCLW;;ADMX;EACE;EACA;;AACF;EACE;;AACA;EACE,aCqCW;;ADpCb;EACE;EACA;;AACF;EACE","file":"university.css"}

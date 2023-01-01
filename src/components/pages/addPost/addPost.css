@@ -1,0 +1,67 @@
+.denied {
+  width: 100%;
+  height: calc(100vh - 6rem - 5.8rem);
+  background: url("https://i.kym-cdn.com/entries/icons/original/000/042/102/davidmartinezstare.jpg") bottom;
+  background-size: cover;
+  filter: saturate(0);
+  color: white;
+}
+.denied button {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.denied button h1 {
+  opacity: 1;
+}
+
+.addPost {
+  width: 100%;
+  height: calc(100vh - 6rem - 5.8rem);
+}
+.addPost form {
+  flex-direction: column;
+}
+.addPost form .buttons button {
+  cursor: pointer;
+  border-radius: 0.7rem;
+}
+.addPost form .buttons .clearPost {
+  background-color: #444444;
+  color: #ffffff;
+}
+.addPost form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.8rem;
+}
+.addPost form label input, .addPost form label textarea {
+  width: 30vw;
+  padding: 0.5rem 1rem;
+  border-radius: 0.7rem;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.addPost form .desc textarea {
+  height: 10vh;
+  resize: none;
+}
+.addPost form .addImg {
+  cursor: pointer;
+  font-size: 1.8rem;
+  padding: 1rem 2rem;
+  background-color: #444444;
+  color: #ffffff;
+  border: 2px dashed white;
+}
+.addPost form .addImg input {
+  display: none;
+}
+.addPost form .image {
+  margin: 1rem 0 2rem;
+}
+.addPost form .image img {
+  height: 25vh;
+}
+
+/*# sourceMappingURL=addPost.css.map */

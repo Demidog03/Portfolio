@@ -1,0 +1,60 @@
+@import "../../../variables/variables"
+
+.denied
+  width: 100%
+  height: calc(100vh - #{$header-height} - 5.8rem)
+  background: url("https://i.kym-cdn.com/entries/icons/original/000/042/102/davidmartinezstare.jpg") bottom
+  background-size: cover
+  filter: saturate(0)
+  color: white
+  button
+    background-color: rgba(255, 255, 255, 0.6)
+    h1
+      opacity: 1
+
+.addPost
+  width: 100%
+  height: calc(100vh - #{$header-height} - 5.8rem)
+  form
+    flex-direction: column
+    .buttons
+      button
+        cursor: pointer
+        border-radius: $blog-border-radius
+      .clearPost
+        background-color: $addPost-btn-color
+        color: $text-light
+    label
+      display: flex
+      flex-direction: column
+      font-size: $text-medium
+      input, textarea
+        width: 30vw
+        padding: 0.5rem 1rem
+        border-radius: $blog-border-radius
+        border: none
+        outline: none
+        font-size: $text-regular
+        margin-bottom: 2rem
+    .desc
+      textarea
+        height: 10vh
+        resize: none
+
+    .addImg
+      cursor: pointer
+      font-size: $text-medium
+      padding: 1rem 2rem
+      background-color: #444444
+      color: $text-light
+      border: 2px dashed white
+      input
+        display: none
+    .image
+      margin: 1rem 0 2rem
+      img
+        height: 25vh
+
+
+
+

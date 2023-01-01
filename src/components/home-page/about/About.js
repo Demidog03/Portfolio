@@ -10,7 +10,7 @@ const matches = major.match(/\b(\w)/g); // ['S','E']
 const acronymMajor = matches.join(''); // SE
 const About = () => {
     return (
-        <section className={'about flex-center'}>
+        <section className={'about flex-center'} id="education">
             <h2>About Me</h2>
             <SectionBtn
                 type='bxs'

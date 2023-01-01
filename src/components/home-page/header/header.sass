@@ -7,13 +7,35 @@ header
   .container
     height: 100%
   nav
+    .dropdown
+      font-size: $text-small
+      font-weight: $weight-regular
+      margin-right: 2em
+      display: flex
+      align-items: center
+      position: relative
+      cursor: pointer
+      ul
+        position: absolute
+        z-index: 1
+        top: 2rem
+        li
+          width: 100%
+          padding: 1em 2rem
+          background-color: #333333
+        li:hover
+          background-color: #bbbbbb
     height: 100%
     img
       width: 5rem
     a
       font-size: $text-small
       font-weight: $weight-regular
-      margin-right: 3em
+      margin-right: 2em
+      display: flex
+      align-items: center
+      i
+        font-size: $text-regular
     img
       margin-right: 3em
   h3

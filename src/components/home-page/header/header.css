@@ -1,7 +1,7 @@
 header {
   height: 6rem;
   background-color: #212121;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 header .container {
   height: 100%;
@@ -9,13 +9,40 @@ header .container {
 header nav {
   height: 100%;
 }
+header nav .dropdown {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-right: 2em;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+header nav .dropdown ul {
+  position: absolute;
+  z-index: 1;
+  top: 2rem;
+}
+header nav .dropdown ul li {
+  width: 100%;
+  padding: 1em 2rem;
+  background-color: #333333;
+}
+header nav .dropdown ul li:hover {
+  background-color: #bbbbbb;
+}
 header nav img {
   width: 5rem;
 }
 header nav a {
   font-size: 1.2rem;
   font-weight: 400;
-  margin-right: 3em;
+  margin-right: 2em;
+  display: flex;
+  align-items: center;
+}
+header nav a i {
+  font-size: 1.5rem;
 }
 header nav img {
   margin-right: 3em;

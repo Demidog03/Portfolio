@@ -1,30 +1,35 @@
-import './app.css';
-import './components/home-page/header/header.css'
-import 'boxicons'
-import Header from "./components/home-page/header/Header";
-import Welcome from "./components/home-page/welcome/Welcome";
-import About from "./components/home-page/about/About";
-import University from "./components/home-page/university/University";
-import Work from "./components/home-page/work/Work";
-import Skills from "./components/home-page/skills/Skills";
-import MyArt from "./components/home-page/art/MyArt";
-import ContactMe from "./components/home-page/contact/ContactMe";
-import Footer from "./components/home-page/footer/Footer";
-
+import Main from "./components/pages/Main";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import Blog from "./components/pages/Blog";
+import AddPost from "./components/pages/addPost/AddPost";
+import Register from "./components/pages/register/Register";
+import Login from "./components/pages/login/Login";
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.min.css'
+import {useDispatch} from "react-redux";
+import {useEffect} from "react";
+import {getUser} from "./redux/features/auth/authSlice";
 
 function App() {
+    const dispatch = useDispatch()
+
+    useEffect(() => {
+        dispatch(getUser())
+    }, [dispatch]) //for every page reload check auth
+
   return (
-    <div className="App">
-        <Header/>
-        <Welcome/>
-        <About/>
-        <University/>
-        <Work/>
-        <Skills/>
-        <MyArt/>
-        <ContactMe/>
-        <Footer/>
-    </div>
+    <Router>
+        <Routes>
+          <Route path='/' element={<Main/>}></Route>
+          <Route path='blog' element={<Blog/>}></Route>
+          <Route path='/blog/new' element={<AddPost/>}></Route>
+          <Route path='/blog/register' element={<Register/>}></Route>
+          <Route path='/blog/login' element={<Login/>}></Route>
+        </Routes>
+        <ToastContainer position="bottom-right" style={{
+            position: "fixed",
+        }}/>
+    </Router>
   );
 }
 

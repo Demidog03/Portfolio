@@ -34,7 +34,7 @@ const Skills = () => {
         for (let i = startIndex; i < endIndex; i++) {
                 skillsArray.push(skills[i])
         }
-        if(j==rowNumber-1){
+        if(j===rowNumber-1){
             skillsArray.push(<button className='andMoreBtn'><h4>and<br/>more</h4></button>)
         }
         //changing start and end indexes
@@ -53,7 +53,7 @@ const Skills = () => {
 
 
     return (
-        <section className='skills flex-center'>
+        <section className='skills flex-center' id='skills'>
             <SectionBtn
                 type='bx'
                 icon='code-alt'
@@ -67,7 +67,7 @@ const Skills = () => {
 
             <div className="projects flex">
                 <h3 className="projects-text">You can find my <b>pet projects</b></h3>
-                <button className='flex-center'><h3>here</h3> <i className='bx bxs-right-arrow-circle'></i></button>
+                <a href="https://github.com/Demidog03"><button className='flex-center'><h3>here</h3> <i className='bx bxs-right-arrow-circle'></i></button></a>
             </div>
         </section>
     );

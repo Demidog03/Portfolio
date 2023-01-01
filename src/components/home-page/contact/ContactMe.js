@@ -31,7 +31,7 @@ const ContactMe = () => {
     }
 
     return (
-        <section className='contactMe flex-center'>
+        <section className='contactMe flex-center' id='contact'>
             <h2>Contact Me</h2>
             <button><h4>I am always ready for new communication!
                 Please let me know about your thoughts!</h4>
@@ -46,7 +46,7 @@ const ContactMe = () => {
                         type="text"/>
                     <h4>Your message</h4>
                     <textarea ref={messageRef} />
-                    <input className='submit' type="submit" value='Send'/>
+                    <input className='submit-contact' type="submit" value='Send'/>
                 </form>
                 <img src={contactImg} alt=""/>
             </div>
