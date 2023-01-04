@@ -18,7 +18,7 @@ function App() {
     }, [dispatch]) //for every page reload check auth
 
   return (
-    <Router>
+    <Router basename="/Portfolio">
         <Routes>
           <Route path='/' element={<Main/>}></Route>
           <Route path='blog' element={<Blog/>}></Route>
