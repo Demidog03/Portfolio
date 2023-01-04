@@ -18,7 +18,7 @@ function App() {
     }, [dispatch]) //for every page reload check auth
 
   return (
-    <Router>
+    <Router basename="https://demi-portfolio.onrender.com/">
         <Routes>
           <Route path='/' element={<Main/>}></Route>
           <Route path='blog' element={<Blog/>}></Route>
