@@ -38,7 +38,7 @@ const Post = ({post}) => {
         <>
         <div className='post flex' onClick={handleClick}>
             <div className="post-img">
-                <img src={`https://demi-portfolio-backend.onrender.com/${post.imgUrl}`} alt=""/>
+                <img src={`https://demi-portfolio-backend.onrender.com/${post?.imgUrl}`} alt=""/>
             </div>
             <h3 className='title'>{post.title}</h3>
             <p className='author'>@{post.username}</p>
@@ -70,7 +70,7 @@ const Post = ({post}) => {
             }
         </div>
             <Modal active={modalActive} setActive={setModalActive}>
-                <img src={`https://demi-portfolio-backend.onrender.com/${post.imgUrl}`} alt=""/>
+                <img src={`https://demi-portfolio-backend.onrender.com/${post?.imgUrl}`} alt=""/>
             </Modal>
         </>
     );
