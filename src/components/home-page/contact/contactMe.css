@@ -18,6 +18,9 @@
   position: absolute;
   right: 6rem;
 }
+.contactMe .contactMe-img {
+  width: 35%;
+}
 .contactMe .contact-form {
   color: #ffffff;
   width: 90%;

@@ -2,7 +2,6 @@
   height: calc(100vh - 6rem);
   background-color: #000000;
   align-items: center;
-  position: relative;
 }
 .welcome .welcome-img {
   height: 100%;
@@ -12,10 +11,13 @@
 }
 .welcome .welcome-bubble {
   position: absolute;
-  left: 40%;
-  top: 60%;
+  bottom: -10rem;
+  left: -10rem;
   padding: 2rem 3rem;
   background-color: #FFFFFF;
+}
+.welcome .welcome-bubble img {
+  transform: rotate(10deg);
 }
 .welcome .welcome-bubble h3 {
   font-size: 1.8rem;
@@ -34,6 +36,7 @@
 .welcome .welcome-text .welcome-text-wrapper {
   justify-content: space-between;
   align-items: flex-start;
+  position: relative;
 }
 .welcome .welcome-text .welcome-text-wrapper h1 {
   font-size: 4rem;

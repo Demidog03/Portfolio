@@ -1,7 +1,6 @@
 import React from 'react';
 import './welcome.css'
 const gojoImage = require('../../../assets/images/GojoBrutalWithBG1.png')
-const bubble = require('../../../assets/bubbles/bubble1.png')
 const vector = require('../../../assets/images/welcome-vector.png')
 
 const Welcome = () => {
@@ -16,15 +15,16 @@ const Welcome = () => {
                     <h2>My name is Olzhas!</h2>
                     <p>I am beginner front-end developer</p>
                     <a href="https://drive.google.com/drive/folders/1z0ukEm5ifJfPPlizfJT_jrF_nf3fpjDL?usp=share_link"><button className='cv-button'>Download CV <i className='bx bxs-download'></i></button></a>
+                    <button className="welcome-bubble">
+                        <h3>
+                            I am ready to unleash <br/>
+                            my full potential!
+                        </h3>
+                        <img src={vector} alt=""/>
+                    </button>
                 </div>
             </div>
-            <button className={"welcome-bubble"}>
-                <h3>
-                    I am ready to unleash <br/>
-                    my full potential!
-                </h3>
-                <img src={vector} alt=""/>
-            </button>
+
         </section>
     );
 };

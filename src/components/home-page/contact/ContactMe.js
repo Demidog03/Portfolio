@@ -48,7 +48,7 @@ const ContactMe = () => {
                     <textarea ref={messageRef} />
                     <input className='submit-contact' type="submit" value='Send'/>
                 </form>
-                <img src={contactImg} alt=""/>
+                <img className="contactMe-img" src={contactImg} alt=""/>
             </div>
         </section>
     );

@@ -4,7 +4,7 @@
   height: calc(100vh - #{$header-height})
   background-color: $welcome-color
   align-items: center
-  position: relative
+
   .welcome-img
     height: 100%
     width: 35%
@@ -12,10 +12,12 @@
     object-fit: cover
   .welcome-bubble
     position: absolute
-    left: 40%
-    top: 60%
+    bottom: -10rem
+    left: -10rem
     padding: 2rem 3rem
     background-color: $welcome-bubble-color
+    img
+      transform: rotate(10deg)
     h3
       font-size: $text-medium
       text-align: center
@@ -27,10 +29,10 @@
     margin-right: 15%
     color: $text-light
     height: 60%
-
     .welcome-text-wrapper
       justify-content: space-between
       align-items: flex-start
+      position: relative
       h1
         font-size: $text-extraBig
         font-weight: $weight-medium
