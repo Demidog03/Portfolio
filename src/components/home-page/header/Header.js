@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import './header.css'
 import {Link} from "react-router-dom";
 import {HashLink} from "react-router-hash-link";
-const lineIcon = require('C:\\Users\\Acer\\WebstormProjects\\React\\Portfolio\\portfolio\\src\\assets\\images\\line1.png')
+const lineIcon = require('../../../assets/images/line1.png')
 
 function Header() {
     const [isActive, setIsActive] = useState(false)

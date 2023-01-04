@@ -1,5 +1,4 @@
 import './main.css';
-import 'boxicons'
 import Header from "../home-page/header/Header";
 import Welcome from "../home-page/welcome/Welcome";
 import About from "../home-page/about/About";

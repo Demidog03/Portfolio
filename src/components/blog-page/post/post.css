@@ -1,0 +1,61 @@
+.post {
+  flex-direction: column;
+  border: 0.5rem white solid;
+  border-radius: 0.7rem;
+  width: calc(33% - 2rem);
+  min-height: 45rem;
+  height: 45rem;
+  background-color: white;
+  transition: transform 0.4s ease, opacity 0.3s ease-in;
+  cursor: pointer;
+  padding: 1rem 1rem;
+  margin: 2rem 0;
+  opacity: 0.5;
+}
+.post .post-img {
+  height: 60%;
+  border-bottom: 4px solid black;
+  padding-bottom: 1rem;
+}
+.post .post-img img {
+  height: 100%;
+  width: auto;
+  overflow: hidden;
+  object-fit: cover;
+}
+.post .title {
+  margin-top: 1rem;
+}
+.post .date {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.post .author {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.post .desc {
+  margin-bottom: 1rem;
+}
+.post .icons {
+  margin-bottom: 0.5rem;
+}
+.post .icons div {
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+}
+.post .iconsUser div {
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+}
+
+.post:hover {
+  transform: scale(1.02);
+  opacity: 1;
+}
+
+.hide {
+  pointer-events: none;
+}
+
+/*# sourceMappingURL=post.css.map */
