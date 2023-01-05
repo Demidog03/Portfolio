@@ -1,11 +1,11 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {AiFillEye, AiOutlineMessage, AiTwotoneEdit, AiFillDelete} from "react-icons/ai";
 import Moment from 'react-moment'
 import './post.css'
 import Modal from "../../modal/Modal";
 import {useDispatch, useSelector} from "react-redux";
 import {removePost} from "../../../redux/features/post/postSlice";
-import {Link, useNavigate, useParams} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import {toast} from "react-toastify";
 
 const Post = ({post}) => {
@@ -14,29 +14,23 @@ const Post = ({post}) => {
     const dispatch = useDispatch()
     const navigate = useNavigate()
 
-    if(!post) return (
-        <div className='no-post'>
-            <h2>No Posts!</h2>
-        </div>
-    )
-
     const handleClick = () => {
         setModalActive(true)
-
     }
 
     const removePostHandler = () => {
         try {
-            dispatch(removePost(post._id))
             toast.success('Post was deleted!')
-            navigate('/blog')
+            dispatch(removePost(post._id))
+            navigate(0)
         }catch (error){
             console.log(error)
         }
     }
+
     return (
         <>
-        <div className='post flex' onClick={handleClick}>
+        <div className='post flex' onClick={handleClick }>
             <div className="post-img">
                 <img src={`https://demi-portfolio-backend.onrender.com/${post?.imgUrl}`} alt=""/>
             </div>

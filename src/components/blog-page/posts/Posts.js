@@ -1,23 +1,19 @@
 import React, {useEffect} from 'react';
-import postsData from "../../../data/postsData";
 import Post from "../post/Post";
 import './posts.css'
 import {useDispatch, useSelector} from "react-redux";
 import {getAllPosts} from "../../../redux/features/post/postSlice";
 
+
 const Posts = () => {
     const dispatch = useDispatch()
-    const {posts, popularPosts} = useSelector(state => state.post)
+    const {posts} = useSelector(state => state.post)
+    const {loading} = useSelector(state => state.post)
 
     useEffect(() => {
         dispatch(getAllPosts())
     }, [dispatch])
 
-    if(!posts.length) {
-        return (
-            <h2>No Posts!</h2>
-        )
-    }
 
     // const posts = postsData.map(post => {
     //     return (
@@ -31,20 +27,36 @@ const Posts = () => {
     //     )
     // })
 
-    return (
-        <section className='posts flex-center'>
-            <h2>My Art</h2>
-            <div className="container flex-space-btw">
-                {
-                    posts?.map((post, idx) => (
-                        <Post ket={idx} post={post}/>
-                    ))
-                }
+    if(loading){
+        return (
+            <section className='posts flex-center'>
+                <h2>Loading</h2>
+            </section>
+        )
+    }
+    else {
+        if(!posts.length) {
+            return (
+                <section className='posts flex-center'>
+                    <h2>No Posts!</h2>
+                </section>
+            )
+        }
+        return (
+            <section className='posts flex-center'>
+                <h2>My Art</h2>
+                <div className="container flex-space-btw">
+                    {
+                        posts?.map((post, idx) => (
+                            <Post key={idx} post={post}/>
+                        ))
+                    }
 
-            </div>
+                </div>
 
-        </section>
-    );
+            </section>
+        );
+    }
 };
 
 export default Posts;

@@ -11,7 +11,7 @@ import {toast} from "react-toastify";
 const Login = () => {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
-    const {status} = useSelector((state) => state.auth)
+    const {status, isLoading} = useSelector((state) => state.auth)
     const dispatch = useDispatch()
     const navigate = useNavigate()
     const isAuth = useSelector(checkIsAuth)
@@ -35,43 +35,52 @@ const Login = () => {
             console.log(error)
         }
     }
-    return (
-        <div>
-            <Header/>
-            <section className="login flex-center   ">
-                <div className="overlay flex-center">
-                    <form className='flex-center' onSubmit={e => e.preventDefault()}>
-                        <h1>Login</h1>
-                        <label className='username' htmlFor="">
-                            Username:
-                            <input
-                                value={username}
-                                onChange={e => setUsername(e.target.value)}
-                                type="text"
-                                placeholder='username'/>
-                        </label>
-                        <label className='password' htmlFor="">
-                            Password:
-                            <input
-                                value={password}
-                                onChange={e => setPassword(e.target.value)}
-                                type="password"
-                                placeholder='password'/>
-                        </label>
-                        <div className='buttons flex-center'>
-                            <input
-                                onClick={handleSubmit}
-                                className='submit'
-                                type="submit"
-                                value='Continue'/>
-                            <Link to="/blog/register"><p>Do not have any account?</p></Link>
-                        </div>
-                    </form>
-                </div>
-            </section>
-            <Footer/>
-        </div>
-    );
+    if(isLoading) {
+        return (
+            <div className='loading flex-center'>
+                <h2>Loading...</h2>
+            </div>
+        )
+    }
+    else {
+        return (
+            <div>
+                <Header/>
+                <section className="login flex-center   ">
+                    <div className="overlay flex-center">
+                        <form className='flex-center' onSubmit={e => e.preventDefault()}>
+                            <h1>Login</h1>
+                            <label className='username' htmlFor="">
+                                Username:
+                                <input
+                                    value={username}
+                                    onChange={e => setUsername(e.target.value)}
+                                    type="text"
+                                    placeholder='username'/>
+                            </label>
+                            <label className='password' htmlFor="">
+                                Password:
+                                <input
+                                    value={password}
+                                    onChange={e => setPassword(e.target.value)}
+                                    type="password"
+                                    placeholder='password'/>
+                            </label>
+                            <div className='buttons flex-center'>
+                                <input
+                                    onClick={handleSubmit}
+                                    className='submit'
+                                    type="submit"
+                                    value='Continue'/>
+                                <Link to="/blog/register"><p>Do not have any account?</p></Link>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <Footer/>
+            </div>
+        );
+    }
 };
 
 export default Login;
